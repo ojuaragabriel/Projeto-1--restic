@@ -1,0 +1,243 @@
+/* Estiliza o corpo da página */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f0f0f0; /* Cor de fundo da página */
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex;
+    width: 800px; /* Largura do container */
+    height: 450px; /* Altura do container */
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do container */
+}
+
+/* Estilo para a área de imagem */
+#imagem {
+    width: 50%; /* Ocupa metade da largura do container */
+    background-color: #97c1a1; /* Cor de fundo da área de imagem */
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem */
+    justify-content: center; /* Alinha horizontalmente a imagem */
+}
+
+/* Estilo para a imagem */
+#imagem img {
+    max-width: 80%; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o cartão de login/registro */
+.card {
+    width: 50%; /* Ocupa metade da largura do container */
+    padding: 20px; /* Espaçamento interno do cartão */
+    box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+}
+
+/* Estilo para a seção de título e descrição */
+#TitDesc {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 0px; /* Remove a margem inferior */
+}
+
+/* Estilo para o título */
+#TitDesc h2 {
+    margin-bottom: 0px; /* Remove a margem inferior */
+    font-size: 2.5em; /* Tamanho da fonte do título */
+    color: #4f7959; /* Cor do título */
+}
+
+/* Estilo para a descrição */
+#TitDesc h3 {
+    font-size: 1.5em; /* Tamanho da fonte da descrição */
+    color: #B163A3; /* Cor da descrição */
+}
+
+/* Estilo para a seção de botões */
+#botoes {
+    display: flex;
+    justify-content: space-around; /* Distribui os botões igualmente */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo para os botões */
+#botoes button {
+    width: 100px; /* Largura fixa dos botões */
+    padding: 10px; /* Espaçamento interno dos botões */
+    border-radius: 30px; /* Bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para as mudanças de cor e transformação */
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão ativo */
+#botoes button.active {
+    background-color: #B163A3; /* Cor de fundo quando ativo */
+    color: white; /* Cor do texto quando ativo */
+}
+
+/* Estilo para o botão inativo */
+#botoes button.inactive {
+    background-color: #ccc; /* Cor de fundo quando inativo */
+    color: black; /* Cor do texto quando inativo */
+}
+
+/* Efeito de hover para os botões */
+#botoes button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Estilo para os formulários */
+#forms {
+    flex: 1; /* Permite que o elemento se expanda para ocupar o espaço restante */
+    display: flex;
+    flex-direction: column; /* Alinha os formulários verticalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Estilo para os formulários individuais */
+.form {
+    display: none; /* Oculta os formulários por padrão */
+    flex-direction: column; /* Alinha os campos do formulário verticalmente */
+    align-items: center; /* Alinha os campos do formulário no centro */
+    height: 100%; /* Ocupa a altura total disponível */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+/* Estilo para o formulário ativo */
+.form.active {
+    display: flex; /* Mostra o formulário quando ativo */
+}
+
+/* Estilo para os elementos de formulário */
+form {
+    width: 100%; /* Largura total do formulário */
+    max-width: 300px; /* Largura máxima do formulário */
+    display: flex;
+    flex-direction: column; /* Alinha os campos verticalmente */
+    align-items: center; /* Alinha os campos no centro */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    padding-bottom: 20px; /* Espaçamento interno inferior */
+}
+
+/* Estilo para campos de entrada de texto e senha */
+input[type="text"], input[type="password"] {
+    width: 90%; /* Largura dos campos de entrada */
+    padding: 8px; /* Espaçamento interno dos campos */
+    margin-bottom: 10px; /* Margem inferior entre os campos */
+    border-radius: 20px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda dos campos */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Estilo para campos de entrada em foco */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #B163A3; /* Cor da borda em foco */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(177, 99, 163, 0.5); /* Sombra ao redor do campo em foco */
+}
+
+/* Estilo para botões de formulário */
+button {
+    width: 100px; /* Largura fixa dos botões */
+    padding: 10px; /* Espaçamento interno dos botões */
+    border-radius: 30px; /* Bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    background-color: #B163A3; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para as mudanças de cor e transformação */
+    font-size: 0.9em; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Efeito de hover para os botões de formulário */
+button:hover {
+    background-color: #d55a9f; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+/* Estilo para a seção de níveis de programação */
+.nivel-programacao {
+    width: 100%; /* Largura total da seção */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo para o título da seção de níveis de programação */
+.nivel-programacao p {
+    margin-bottom: 10px; /* Margem inferior do título */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo para cada opção de nível de programação */
+.nivel-programacao div {
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    margin-bottom: 5px; /* Margem inferior entre as opções */
+}
+
+/* Estilo para os checkboxes de nível de programação */
+.nivel-programacao input[type="checkbox"] {
+    margin-right: 10px; /* Margem direita para separar do texto */
+}
+
+/* Estilo para os rótulos dos checkboxes */
+.nivel-programacao label {
+    cursor: pointer; /* Muda o cursor ao passar sobre o rótulo */
+}
+
+/* Estilo para os rótulos dos checkboxes quando selecionados */
+.nivel-programacao input[type="checkbox"]:checked + label {
+    background-color: #97c1a1; /* Cor de fundo quando selecionado */
+    color: white; /* Cor do texto quando selecionado */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo para dispositivos com largura máxima de 768px (telescópios menores) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda a direção do layout para coluna */
+        width: 100%; /* Largura total do container */
+        max-width: 400px; /* Largura máxima do container */
+        height: auto; /* Altura automática */
+    }
+
+    #imagem {
+        display: none; /* Oculta a imagem em telas menores */
+    }
+
+    .card {
+        width: 100%; /* Largura total do cartão */
+        padding: 15px; /* Espaçamento interno reduzido */
+        box-shadow: none; /* Remove a sombra do cartão */
+    }
+
+    #TitDesc h2 {
+        font-size: 1.2em; /* Tamanho reduzido do título */
+    }
+
+    #botoes button {
+        width: 100px; /* Mantém o tamanho fixo dos botões */
+        font-size: 0.9em; /* Mantém o tamanho da fonte */
+    }
+
+    input[type="text"], input[type="password"] {
+        max-width: 250px; /* Largura máxima dos campos de entrada em telas menores */
+    }
+}

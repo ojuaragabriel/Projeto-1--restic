@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Formação Full-stack</title>
+</head>
+<body>
+    <div class="container">
+        <div id="imagem">
+            <img src="computer.png" alt="Imagem">
+        </div>
+        <div class="card">
+            <div id="TitDesc">
+                <h2 id="title">Bem-vindo</h2>
+                <h3 id="description">Formação Full-stack</h3>
+            </div>
+            <div id="botoes">
+                <button id="btn-open" class="active" onclick="showLogin()">Login</button>
+                <button id="btn-register" class="inactive" onclick="showRegister()">Cadastrar</button>
+            </div>
+            <div id="forms">
+                <div id="login-form" class="form active">
+                    <form>
+                        <input type="text" id="login-username" placeholder="Nome de usuário">
+                        <input type="password" id="login-password" placeholder="Senha">
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                <div id="register-form" class="form">
+                    <form>
+                        <input type="text" id="E-mail" placeholder="E-mail">
+                        <input type="text" id="register-username" placeholder="Nome de usuário">
+                        <input type="password" id="register-password" placeholder="Senha">
+                        <input type="password" id="confirm-password" placeholder="Confirme a senha">
+                        <div class="nivel-programacao">
+                            <p>Seu atual nível de programação:</p>
+                            <div>
+                                <input type="checkbox" id="beginner" name="nivel" value="beginner">
+                                <label for="iniciante">Iniciante</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="intermediate" name="nivel" value="intermediate">
+                                <label for="intermediario">Intermediário</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="advanced" name="nivel" value="advanced">
+                                <label for="advancado">Avançado</label>
+                            </div>
+                        </div>
+                        <button type="registro">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="transition.js"></script>
+</body>
+</html>
